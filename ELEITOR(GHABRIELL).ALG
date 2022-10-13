@@ -101,10 +101,9 @@ Inicio
             escreval("Voto em nulo")
             contNulo <- contNulo +1
          fimescolha
-         limpatela
+
          escreval("")
          escreva("Deseja confirmar o seu voto? (s) ou (n)")
-         leia(resposta)
          
          se(voto = numeroCandidato1)e(resposta="n")ENTAO
           contCandidato1 <- contCandidato1 - 1
@@ -121,7 +120,8 @@ Inicio
      se(voto = -1)e(resposta="n")ENTAO
           contNulo <- contNulo - 1
      fimse
-
+     
+      leia(resposta)
       ate(resposta <> "n")
       escreva("Ainda há mais eleitores para votar? (s) ou (n)")
       leia(resposta)
