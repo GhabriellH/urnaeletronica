@@ -35,20 +35,19 @@ Inicio
    contCandidato3 <- 0
    contNulo <- 0
    contBranco <- 0
-   
-   //Solicita o numero e o nome do candidato 1
+
    escreva("Informe o nome do cadidato 1: ")
    leia(nomeCandidato1)
 
    escreva("Informe o numero do cadidato 1: ")
    leia(numeroCandidato1)
-   //Solicita o numero e o nome do candidato 2
+
    escreva("Informe o nome do cadidato 2: ")
    leia(nomeCandidato2)
 
    escreva("Informe o numero do cadidato 2: ")
    leia(numeroCandidato2)
-   //Solicita o numero e o nome do candidato 3
+
    escreva("Informe o nome do cadidato 3: ")
    leia(nomeCandidato3)
 
@@ -76,9 +75,9 @@ Inicio
    timer(0)
 
    limpatela
-   //Estrutura de repetição para eleitores
+
    repita
-      //Estrutura de repetição para confirmaçãode votos
+
       repita
          escreva("Informe o número do candidato: ")
          leia(voto)
