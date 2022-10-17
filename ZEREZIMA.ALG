@@ -108,9 +108,6 @@ Inicio
             contNulo <- contNulo +1
          fimescolha
 
-
-
-
       escreva("Ainda tem eleitor para votar? (s) ou (n)")
       leia(resposta)
 
