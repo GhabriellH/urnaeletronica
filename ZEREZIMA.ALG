@@ -35,7 +35,7 @@ Inicio
    contCandidato3 <- 0
    contNulo <- 0
    contBranco <- 0
-   
+
    //Solicita o numero e o nome do candidato 1
    escreva("Informe o nome do cadidato 1: ")
    leia(nomeCandidato1)
@@ -76,63 +76,18 @@ Inicio
    timer(0)
 
    limpatela
-   //Estrutura de repetição para eleitores
+   
    repita
-      //Estrutura de repetição para confirmaçãode votos
-      repita
-         escreva("Informe o número do candidato: ")
-         leia(voto)
-         escreva(".")
-
-         escolha voto
-         caso numeroCandidato1
-            escreval(numeroCandidato1, " - ", nomeCandidato1)
-            contCandidato1 <- contCandidato1 + 1
-         caso numeroCandidato2
-            escreval(numeroCandidato2, " - ", nomeCandidato2)
-            contCandidato2 <- contCandidato2 + 1
-         caso numeroCandidato3
-            escreval(numeroCandidato3, " - ", nomeCandidato3)
-            contCandidato3 <- contCandidato3 + 1
-         caso 0
-            escreval("0 - voto em Branco")
-            contBranco <- contBranco +1
-         outrocaso
-            escreval("Voto em nulo")
-            contNulo <- contNulo +1
-         fimescolha
-
-         escreval("")
-         escreva("Deseja confirmar o seu voto? (s) ou (n)")
-         
-         se(voto = numeroCandidato1)e(resposta="n")ENTAO
-          contCandidato1 <- contCandidato1 - 1
-     fimse
-     se(voto = numeroCandidato2)e(resposta="n")ENTAO
-          contCandidato2 <- contCandidato2 - 1
-     fimse
-     se(voto = numeroCandidato3)e(resposta="n")ENTAO
-          contCandidato3 <- contCandidato3 - 1
-     fimse
-     se(voto = 0)e(resposta="n")ENTAO
-          contBranco <- contBranco - 1
-     fimse
-     se(voto = -1)e(resposta="n")ENTAO
-          contNulo <- contNulo - 1
-     fimse
+     repita
      
-      leia(resposta)
-      ate(resposta <> "n")
-      escreva("Ainda há mais eleitores para votar? (s) ou (n)")
-      leia(resposta)
-   ate(resposta <> "s")
-   limpatela
-
-   escreval("==========BOLETIM DE URNA==========")
-   escreval(nomeCandidato1, ":", contCandidato1)
-   escreval(nomeCandidato2, ":", contCandidato2)
-   escreval(nomeCandidato3, ":", contCandidato3)
-   escreval(" 0 - Brancos: ", contBranco)
-   escreval(" Votos nulos: ", contNulo)
+        escreva("Deseja confirmar o seu voto? (s) ou (n)")
+        leia(resposta)
+        
+     ate(resposta = "s")
+     
+        escreva("Ainda tem eleitor para votar? (s) ou (n)")
+        leia(resposta)
+        
+     ate(resposta <> "s")
    
 Fimalgoritmo
